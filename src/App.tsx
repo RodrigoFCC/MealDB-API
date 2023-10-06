@@ -10,6 +10,8 @@ import GlobalStyle from './styles'
 import theme from './theme/defaultTheme'
 import Ingredients from './pages/ByIngredients'
 import ById from './pages/ById'
+import RecipeByIngredients from './components/RecipeByIngredients'
+import MealIngredients from './pages/ByIngredients/MealByIngredients'
 
 const rotas = createBrowserRouter([
   {
@@ -27,6 +29,10 @@ const rotas = createBrowserRouter([
   {
     path: '/recipe/:recipeId',
     element: <ById />
+  },
+  {
+    path: '/ingredients/:recipeIngredient',
+    element: <MealIngredients />
   }
 ])
 

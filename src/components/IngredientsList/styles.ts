@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-export const CardIngredients = styled.a`
+export const CardIngredients = styled(Link)`
   background-color: ${(props) => props.theme.secondaryColor};
   display: flex;
   justify-content: center;
@@ -9,6 +10,7 @@ export const CardIngredients = styled.a`
   padding: 16px;
   color: ${(props) => props.theme.mainColor};
   margin: 0 5px 0 5px;
+  text-decoration: none;
   cursor: pointer;
 
   &:hover {
@@ -23,5 +25,18 @@ export const CardContainer = styled.div`
   row-gap: 8px;
   margin-top: 16px;
 `
+export const InputStyle = styled.input`
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 4px 16px;
+  outline-color: ${(props) => props.theme.mainColor};
+`
 
-export {}
+export const IngredientsTittle = styled.h1`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  color: ${(props) => props.theme.mainColor};
+`

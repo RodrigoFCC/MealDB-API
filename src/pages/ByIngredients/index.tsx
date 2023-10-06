@@ -4,7 +4,7 @@ import IngredientsList from '../../components/IngredientsList'
 const Ingredients = () => (
   <>
     <Header />
-    <div className="container cardContainer">
+    <div className="container">
       <IngredientsList></IngredientsList>
     </div>
   </>

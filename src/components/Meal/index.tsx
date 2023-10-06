@@ -32,6 +32,7 @@ const Meal = ({ data }: Props) => {
                 | ReactPortal
                 | null
                 | undefined
+              strIngredient: string | undefined
             }) => {
               return (
                 <LiMeal key={item.idMeal}>

@@ -15,7 +15,7 @@ const RecipeIndex = ({ alphaIndex }: Props) => {
     'J',
     'I',
     'J',
-    'k',
+    'K',
     'L',
     'M',
     'N',
