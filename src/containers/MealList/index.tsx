@@ -17,7 +17,6 @@ const MealList = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.meals)
         setItem(data.meals)
         setShow(true)
       })

@@ -11,8 +11,6 @@ type Props = {
 }
 
 const Meal = ({ data }: Props) => {
-  console.log(data)
-
   return (
     <>
       {!data
