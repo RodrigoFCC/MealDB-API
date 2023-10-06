@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import Meal from '../../components/Meal'
 
-import { InputStyle, UlVaga } from './styles'
+import { InputStyle, UlMeal } from './styles'
 import RecipeIndex from '../../components/RecipeIndex'
 
 const MealList = () => {
@@ -44,7 +44,7 @@ const MealList = () => {
         onKeyPress={searchRecipe}
       />
 
-      <UlVaga>{show ? <Meal data={item} /> : 'Não Encontrado'}</UlVaga>
+      <UlMeal>{show ? <Meal data={item} /> : 'Não Encontrado'}</UlMeal>
     </div>
   )
 }

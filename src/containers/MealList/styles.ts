@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const UlVaga = styled.ul`
+export const UlMeal = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;

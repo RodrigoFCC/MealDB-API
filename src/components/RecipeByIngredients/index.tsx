@@ -3,12 +3,11 @@ import { useParams } from 'react-router-dom'
 
 import Meal from '../Meal'
 
-import { InputStyle, UlVaga } from '../../containers/MealList/styles'
+import { UlMeal } from '../../containers/MealList/styles'
 
 const RecipeByIngredients = () => {
   const [item, setItem] = useState()
   const [show, setShow] = useState(false)
-  const [search, setSearch] = useState('')
 
   const { recipeIngredient } = useParams()
 
@@ -25,7 +24,7 @@ const RecipeByIngredients = () => {
 
   return (
     <div>
-      <UlVaga>{show ? <Meal data={item} /> : 'Não Encontrado'}</UlVaga>
+      <UlMeal>{show ? <Meal data={item} /> : 'Não Encontrado'}</UlMeal>
     </div>
   )
 }

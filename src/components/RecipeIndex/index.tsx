@@ -1,4 +1,4 @@
-import { CardLetters } from './styles'
+import { CardLetters, IndexContainer } from './styles'
 
 type Props = {
   alphaIndex: (item: string) => void
@@ -34,13 +34,15 @@ const RecipeIndex = ({ alphaIndex }: Props) => {
   ]
   return (
     <>
-      {alpha.map((item, index) => {
-        return (
-          <CardLetters key={index} onClick={() => alphaIndex(item)}>
-            <h3>{item}</h3>
-          </CardLetters>
-        )
-      })}
+      <IndexContainer className="container">
+        {alpha.map((item, index) => {
+          return (
+            <CardLetters key={index} onClick={() => alphaIndex(item)}>
+              <h3>{item}</h3>
+            </CardLetters>
+          )
+        })}
+      </IndexContainer>
     </>
   )
 }

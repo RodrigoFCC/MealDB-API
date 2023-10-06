@@ -17,6 +17,11 @@ export const CardIngredients = styled(Link)`
     color: ${(props) => props.theme.secondaryColor};
     background-color: ${(props) => props.theme.mainColor};
   }
+
+  @media (max-width: 768px) {
+    margin-top: 16px;
+    font-size: 1rem;
+  }
 `
 export const CardContainer = styled.div`
   display: grid;
@@ -24,6 +29,11 @@ export const CardContainer = styled.div`
   column-gap: 8px;
   row-gap: 8px;
   margin-top: 16px;
+
+  @media (max-width: 768px) {
+    display: block;
+    margin-top: 8px;
+  }
 `
 export const InputStyle = styled.input`
   margin-top: 3rem;

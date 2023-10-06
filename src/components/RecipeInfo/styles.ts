@@ -12,6 +12,11 @@ export const SubTittle = styled.h3`
   margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 500;
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
 `
 
 export const Description = styled.h4`
@@ -25,6 +30,11 @@ export const MealImg = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    img {
+      max-width: 100%;
+    }
+  }
 `
 
 export const MealCategory = styled.div`
@@ -39,7 +49,7 @@ export const Ingredients = styled.div`
   column-gap: 24px;
   row-gap: 8px;
   margin-top: 16px;
-  justify-items: center;
+  justify-items: start;
 `
 
 export const SubTittleDiv = styled.div`
@@ -53,4 +63,8 @@ export const SubTittleDiv = styled.div`
 export const YoutubeVideo = styled.div`
   width: 80%;
   margin: 3rem auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `

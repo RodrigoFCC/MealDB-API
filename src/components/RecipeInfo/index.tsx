@@ -73,6 +73,13 @@ const RecipeInfo = () => {
               src={`https://www.youtube.com/embed/${id}`}
             ></iframe>
           </YoutubeVideo>
+          <SubTittle>
+            Fonte:{' '}
+            <a href={item.strSource} target="_blank" rel="noreferrer">
+              {' '}
+              Link
+            </a>
+          </SubTittle>
         </div>
       )}
     </>

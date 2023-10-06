@@ -19,6 +19,11 @@ export const CardLetters = styled.div`
 export const IndexContainer = styled.div`
   display: flex;
   margin: 2.5rem 0;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 `
 
 export {}
