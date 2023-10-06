@@ -11,12 +11,18 @@ export const HeaderDiv = styled.div`
   justify-content: space-evenly;
 `
 
-export const Tittle = styled.h1`
+export const Tittle = styled(Link)`
+  font-size: 32px;
+  font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
+  color: ${(props) => props.theme.mainColor};
 `
 
 export const Menu = styled(Link)`
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
+  color: ${(props) => props.theme.mainColor};
 `

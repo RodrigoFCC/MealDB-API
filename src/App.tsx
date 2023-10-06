@@ -34,10 +34,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Header />
-      <div className="container">
-        <RouterProvider router={rotas} />
-      </div>
+      <RouterProvider router={rotas} />
     </ThemeProvider>
   )
 }

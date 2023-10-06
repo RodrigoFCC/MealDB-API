@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { CardIngredients } from './styles'
+import { CardContainer, CardIngredients } from './styles'
 
 const IngredientsList = () => {
   const [item, setItem] = useState([])

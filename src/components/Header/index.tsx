@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <HeaderDiv>
-        <Tittle>Receitinhas</Tittle>
+        <Tittle to={'/'}>Receitinhas</Tittle>
         <Menu to={'/ingredients'}>Por Ingredientes</Menu>
       </HeaderDiv>
     </>

@@ -1,9 +1,13 @@
+import Header from '../../components/Header'
 import SearchByname from '../../components/SearchByName'
 import MealList from '../../containers/MealList'
 
 const ByName = () => (
   <>
-    <SearchByname></SearchByname>
+    <Header />
+    <div className="container">
+      <SearchByname></SearchByname>
+    </div>
   </>
 )
 

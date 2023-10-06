@@ -1,8 +1,12 @@
+import Header from '../../components/Header'
 import IngredientsList from '../../components/IngredientsList'
 
 const Ingredients = () => (
   <>
-    <IngredientsList></IngredientsList>
+    <Header />
+    <div className="container cardContainer">
+      <IngredientsList></IngredientsList>
+    </div>
   </>
 )
 
